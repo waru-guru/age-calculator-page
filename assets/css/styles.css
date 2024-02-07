@@ -1,0 +1,109 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 86%);
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form-container{
+    display: flex;
+    gap: 2rem;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}
+.block label{
+    color: hsl(0, 1%, 44%);
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+input{
+    width: 80px;
+    padding: 0.5rem;
+    border: 1.2px solid hsl(0, 0%, 86%);
+    border-radius: 3px;
+    display: flex;
+    font-size: 1.2rem;
+}
+input::placeholder{
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+.submit-block{
+    display: flex;
+    align-items: center;
+}
+.submit-block hr{
+    width: 100%;
+}
+.submit-block .submit_btn{
+    border-radius: 50%;
+    padding: 1rem;
+    border: unset;
+    background-color: hsl(259, 100%, 65%);
+}
+.output h1{
+    font-size: 50px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.output span{
+    color: hsl(259, 100%, 65%);
+}
+small{
+    color:  hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width:600px) {
+    .card{
+        width: 360px;
+    }
+    .container{
+        padding: 1rem;
+    }
+    .form-container{
+        margin-bottom: 4rem;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .submit-block{
+        position: relative;
+    }
+    .submit_btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .output{
+        margin-top: 4rem;
+    }
+
+}

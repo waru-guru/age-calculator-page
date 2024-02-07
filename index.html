@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Age calculator page</title>
+
+</head>
+<body>
+
+<div class="card">
+    <div class="container">
+        <form id="myForm">
+            <div class="form-container">
+                <div class="block">
+                  <label for="day">Day</label>
+                  <input type="number" placeholder="DD" id="day">
+                  <small></small>
+                </div>
+                <div class="block">
+                  <label for="month">Month</label>
+                  <input type="number" placeholder="MM" id="month">
+                  <small></small>
+                </div>
+                <div class="block">
+                  <label for="year">Year</label>
+                  <input type="number" placeholder="YYYY" id="year">
+                  <small></small>
+                </div>
+            </div>
+            <div class="submit-block">
+              <hr>
+              <button type="submit" class="submit_btn"><img src="/assets/images/icon-arrow.svg" alt="arrow"></button>
+            </div>
+        </form>
+        <div class="output">
+          <h1><span id="dash-year">--</span>years</h1>
+          <h1><span id="dash-month">--</span>months</h1>
+          <h1><span id="dash-day">--</span>days</h1>
+
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
