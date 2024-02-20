@@ -6,7 +6,7 @@ const output_day = document.getElementById("dash-day");
 //INPUTS
 const enter_year = document.getElementById("year");
 const enter_month = document.getElementById("month");
-const enter_day = document.getElementById("date");
+const enter_day = document.getElementById("day");
 
 //FORM
 const form = document.getElementById("myForm");
@@ -38,7 +38,7 @@ function validate(){
             enter_day.parentElement.querySelector("small").innerText = "Must be a valid day.";
             validator = false;
         }else{
-            i.style.borderBlockColor = "black";
+            input.style.borderBlockColor = "black";
             parent.querySelector("small").innerText = "";
             validator = true; 
         }
